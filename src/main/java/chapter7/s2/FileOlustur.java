@@ -14,8 +14,10 @@ public class FileOlustur {
 		System.out.println(dirs.mkdirs());
 
 		File file = new File(dirs, "MyText.txt");
-		if (!file.exists())
-			System.out.println(file.createNewFile());
+		if (!file.exists()) {
+			boolean olustuMu = file.createNewFile(); // fiziksel bir dosya olustur.
+			System.out.println(olustuMu);
+		}			
 
 	}
 

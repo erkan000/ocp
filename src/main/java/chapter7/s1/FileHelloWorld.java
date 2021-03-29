@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 
 public class FileHelloWorld {
 	
-	public static String yol = "chapter7_temp/";
+	public static final String yol = "src/main/resources/chapter7_temp/";
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
