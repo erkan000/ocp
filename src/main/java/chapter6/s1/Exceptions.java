@@ -38,6 +38,18 @@ public class Exceptions {
 		try {}
 		catch (RuntimeException e) {}
 	}
+	void method11() {
+		try {}
+		catch (NullPointerException e) {}
+	}
+	
+	void method12() {
+//		HATA
+		
+//		try {}
+//		catch (CannotSwimException e) {}
+	}
 	
 
 }
+class CannotSwimException extends Exception {}

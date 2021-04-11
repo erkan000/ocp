@@ -17,16 +17,16 @@ public class SuppressedExceptions {
 
 class RiverRaft implements AutoCloseable {
 	public RiverRaft() throws Exception {
-		System.out.println("Start raft");
+		System.out.println("Constructor");
 		// throw new Exception("ddddd");
 		// Burada suppress çalışmaz. Daha bağlantı açılmadı çünkü
 	}
 	public void crossRapid() throws Exception {
-		System.out.println("Cross rapid");
+		System.out.println("Normal method");
 		throw new Exception("Cross Rapid exception");
 	}
 	public void close() throws Exception {
-		System.out.println("Reach river bank");
+		System.out.println("Close method");
 		throw new Exception("Close exception");
 	}
 }
