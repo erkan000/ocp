@@ -4,6 +4,11 @@ public class Outer1 {
 	
 	Inner inner = new Inner();
 	
-	class Inner{}
+	class Inner{
+		
+//		final olmayan static tanımlanamaz!
+//		final static int a = 4;
+		
+	}
 
 }
