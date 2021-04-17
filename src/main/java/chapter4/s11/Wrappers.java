@@ -13,6 +13,8 @@ public class Wrappers {
 		long parse = Long.parseLong("3454");
 		System.out.println(parse);
 		
+		Short s1 = Short.valueOf((short) 1);
+		Short s2 = Short.parseShort("1");
 		
 	}
 

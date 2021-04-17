@@ -1,6 +1,7 @@
 package chapter4.s6;
 
 import java.util.LinkedList;
+import java.util.stream.Stream;
 import java.util.Iterator;
 
 public class YiginKuyruk {

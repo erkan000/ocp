@@ -1,9 +1,20 @@
 package annotations;
 
 public @interface FirstAnnotation {
-	TestClass a = new TestClass();
+//	TestClass a(); sınıf derlenenmez
+	
+	Color c();
+	
+	Snow snow() default @Snow(true);
 }
 
-class TestClass {
-	
+
+enum Color {GREY, BROWN}
+
+
+@interface Snow{
+	boolean value() default false;
 }
+
+
+class TestClass {}
