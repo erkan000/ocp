@@ -6,11 +6,13 @@ import java.nio.file.Paths;
 public class Summary {
 	
 	public static void main(String[] args) {
-		Path dir = Paths.get("code");
-		
+		Path dir = Paths.get("code");		
 		Path file = Paths.get("code/java/IO.java");
-		Path relative = file.resolve(file.relativize(dir));
+		Path tmp = file.relativize(dir);
+		Path relative = file.resolve(tmp);
 		Path absolute = relative.toAbsolutePath();
+		
+		System.out.println(tmp);
 		System.out.println(relative);
 		System.out.println(absolute);
 	}

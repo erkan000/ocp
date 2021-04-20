@@ -8,7 +8,7 @@ public class ByteBufferTest {
 	 * 
 	 * 
 - hasRemaining() yordamı, mevcut pozisyon ile limit arasındaki eleman sayısını bildirir.
-- flip() yordamı çağrıldığında, ByteBuffernesnesinde tanımlı olan pozisyonundeğeri sıfıra eşitlenir. Limitdeğeri okunamayacak veya yazılamayacak olan son elemanın üzerine getirilir ve biraz ileride göreceğimiz
+- flip() yordamı çağrıldığında, ByteBuffer nesnesinde tanımlı olan pozisyonun değeri sıfıra eşitlenir. Limit değeri okunamayacak veya yazılamayacak olan son elemanın üzerine getirilir ve biraz ileride göreceğimiz
 - mark() yordamının kullanılmasıyla işaretlenmiş olan yer silinir.
 - get() yordamı, belirtilen elemanı okur.
 	 * 
@@ -43,8 +43,9 @@ public class ByteBufferTest {
 		System.out.println(" pozisyon:"+pozisyon);
 		System.out.println("---------------------------");
 
-		while (bb.hasRemaining()) {
+		while (bb.hasRemaining()) {			
 			System.out.println( "-->" + bb.get() );
+			System.out.println("Remains: " + bb.remaining());
 		}
 	}
 }
