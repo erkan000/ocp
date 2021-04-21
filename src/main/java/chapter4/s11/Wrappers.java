@@ -16,6 +16,8 @@ public class Wrappers {
 		Short s1 = Short.valueOf((short) 1);
 		Short s2 = Short.parseShort("1");
 		
+		Double toplam = d + 12.4;
+		System.out.println(toplam);
 	}
 
 }

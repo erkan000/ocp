@@ -15,6 +15,9 @@ public class HashSetTest {
 		System.out.println(list.add(c));		// Hata fırlatmaz, false döner ve eleman aynı oldugundan eklemez!
 		
 		System.out.println(list.size());
+		
+		Set<String> islandNations = Set.of("Australia", "Japan", "Taiwan", "Cyprus", "Cuba");
+		System.out.println(islandNations);      // Sırası tamamen rastgeledir! sıralanamaz!
 	}
 	
 }
