@@ -19,7 +19,8 @@ public class Senkronizasyon  {
 
     Map mSirali = Collections.synchronizedSortedMap(new TreeMap());
     
-    
+    Set treeSet = Collections.synchronizedNavigableSet(new TreeSet());
+    Map treeMap = Collections.synchronizedNavigableMap(new TreeMap());
     
     Collection kapaliTorba = Collections.unmodifiableCollection(c);
 

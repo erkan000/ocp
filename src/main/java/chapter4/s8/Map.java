@@ -3,6 +3,7 @@ package chapter4.s8;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map.Entry;
 import java.util.Set;
 
@@ -54,6 +55,9 @@ public class Map {
 		//Map in value'ları nesne olduğunu düşünelim. bu value 'lara
 		// nesne eklenince ana map'deki nesne değeri de otomatikman güncelleniyor,
 		// işyerinde mesaj işindeki örnek mesela
+		
+		var map11 = java.util.Map.of(1,2, 3, 6);
+		var list = List.copyOf(map11.entrySet());
 		
 	}
 	

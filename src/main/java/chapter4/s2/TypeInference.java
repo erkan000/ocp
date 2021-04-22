@@ -30,4 +30,10 @@ class Parcel3<T>{
 	<X> void deliver(X x) {
 		System.out.println(x.getClass());
 	}
+	
+	static <T> T identity(T t) {
+		   return t;
+	}
+	
 }
+
