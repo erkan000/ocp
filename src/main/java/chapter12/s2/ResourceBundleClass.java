@@ -19,6 +19,9 @@ public class ResourceBundleClass {
 		text = labels.getString("book_now");
 		System.out.println(text);
 
+		Object o = labels.getObject("when");
+		
+		String[] list = labels.getStringArray("when");
 	}
 
 }
