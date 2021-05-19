@@ -11,6 +11,6 @@ public class Ornek1 {
 	}
 	
 	public String toString() {
-		return "Ornek 1 s�n�f�";
+		return "Ornek 1 sınıfı";
 	}
 }

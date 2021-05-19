@@ -15,5 +15,4 @@ public class Ornek2 extends Ornek1 {
 	}
 
 	
-	
 }

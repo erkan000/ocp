@@ -7,7 +7,14 @@ public class Outer1 {
 	class Inner{
 		
 //		final olmayan static tanımlanamaz!
-//		final static int a = 4;
+//		static int b;
+		
+		final static int a = 4;
+		
+//		final olmayan static metod da tanımlanamaz
+//		static void aa() {
+//			
+//		}
 		
 	}
 
