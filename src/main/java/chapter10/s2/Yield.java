@@ -1,6 +1,7 @@
 package chapter10.s2;
 
 class Yield {
+
 	public static void main(String args[]) {
 		Thread sing = new Sing2();
 		sing.start();
@@ -10,8 +11,11 @@ class Yield {
 }
 
 class Sing2 extends Thread{
+
+	@Override
 	public void run() {
 		yield();
 		System.out.println("Singing");
 	}
+
 }
