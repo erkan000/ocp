@@ -28,5 +28,11 @@ public class ZoneDemo {
 				nextMeeting.withZoneSameInstant(ZoneId.of("US/Central"));
 		
 		System.out.println(allZonesIds);
+
+		// Şu anda bulunduğun bölgeye göre bir zone daki saat bilgisi
+		ZonedDateTime zonedNow = ZonedDateTime.now(ZoneId.of("Europe/Istanbul"));
+		System.out.println(zonedNow);
+		ZonedDateTime timeAtUtc = zonedNow.withZoneSameInstant(ZoneId.of("UTC"));
+		System.out.println(timeAtUtc);
 	}
 }
